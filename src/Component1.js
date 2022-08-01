@@ -341,7 +341,7 @@ export default class Component1 extends Component {
                        return <li><input type="text" value={data.item} readOnly/><input type="number" value={data.amt} readOnly /><button className="editbtn" id="5" value={index} onClick={this.editrow}><i class="fa-solid fa-pen-to-square"></i></button><button className="deletebtn" onClick={this.deleterow} id="5" value={index}><i class="fa-solid fa-trash"></i></button></li>
                  })}
           </div>
-          <input type="submit" value="Check Your Balance"/>
+          <input type="submit" value="Check Your Balance" onClick={()=>alert("Your Balance is : ₹"+this.state.allresult)}/>
           </form>
          
       </div>
